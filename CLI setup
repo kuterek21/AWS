@@ -1,0 +1,7 @@
+aws
+aws --version
+aws configure --profile iamadmin-general
+Acc Key ID:
+Secret Key
+reqion: us-east-1 ( example )
+
