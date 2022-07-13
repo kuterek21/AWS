@@ -1,3 +1,5 @@
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
+
 aws
 aws --version
 aws configure --profile iamadmin-general
