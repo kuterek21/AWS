@@ -8,4 +8,5 @@ Secret Key
 reqion: us-east-1 ( example )
 -------------------------------------
 aws s3 ls --profile iamadmin-general
-
+-------------------------------------
+aws iam list-users
