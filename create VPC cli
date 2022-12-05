@@ -1,0 +1,23 @@
+---------aws configure
+access key
+secret key
+def region
+def format
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+aws ec2 create-vpc --cidr-block 10.0.0.0/22 --region us-east-2  //for VPC
+
+aws ec2 describe-vpcs --region us-east-2  //describe to check the status
+
+aws ec2 create-internet-gateway --region us-east-2    //create internet gateway
+
+aws ec2 attach-internet-gateway --region us-east-2 internet-gateway-id [] --vpc-id []  / attache IGW to the VPC
+
+aws ec2 create-subnet  --region us-east-2 {--tag()-additionally} --cidr-block 10.0.0.0/25 --vpc-id <value>   //create a subnet
+
+aws ec2 create-route-table --region us-east-2 --vpc-id <value>       //create route table
+
+aws ec2 create-route --region us-east-2 --destination-cidr-block 0.0.0.0/0 --gateway-id <value> --route-table-id <value>   // create a route
+
+aws ec2 associate-route-table --region us-east-2 --route-table-id <> --subnet-id <>             //associate subnet with a route table
