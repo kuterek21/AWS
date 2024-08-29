@@ -1,0 +1,16 @@
+create a bucket S3
+
+aws s3 mb S3://nameofthebucket  // create a new S3
+
+aws s3 ls  // view what is in it
+
+touch testfile.txt // create a new file
+
+aws s3 cp testfile.txt s3://nameofthebucket // copy a file "filename" into the bucket
+
+aws s3 ls s3://nameofthebucket // view what is in the bucket
+
+DELETE bucket
+
+aws s3 rb s3://any // will delete an empty bucket but to delete a bucket with a file use --force
+
